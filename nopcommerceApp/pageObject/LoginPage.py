@@ -19,7 +19,7 @@ class LoginPage:
         self.driver.find_element(By.ID, self.textbox_password_id).clear()
         self.driver.find_element(By.ID,self.textbox_password_id).send_keys(password)
     def clickLogin(self):
-        self.driver.find_element(By.XPATH,self.button_login_xpath).click()
+        self.driver.find_element(By,id,self.button_login_id).click()
 
     def clickLogout(self):
         self.driver.find_element(By.XPATH,self.link_logout_linktext).click()

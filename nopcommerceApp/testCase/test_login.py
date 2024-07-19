@@ -7,6 +7,7 @@ from utilities.readProperties import ReadConfig
 from utilities.customLogger import setup_logging
 from selenium.webdriver.chrome.service import Service
 
+
 logger = setup_logging()
 logger.info("Logger object created successfully..")
 class Test_001_login:
@@ -16,9 +17,6 @@ class Test_001_login:
 
 
     def test_homePageTitle(self, setup):
-        # self.logger.info("****** Test_001_login *******")
-        # self.logger.info("****** Verify Home Page Title *******")
-        # logger.info("****** Verify Home Page Title *******")
         self.driver = setup
         self.driver.get(self.baseURL)
 
